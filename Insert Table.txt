@@ -1,0 +1,31 @@
+SELECT * FROM customer;
+SELECT * FROM services;
+SELECT * FROM brand;
+SELECT * FROM model;
+SELECT * FROM car;
+SELECT * FROM dealer;
+
+INSERT INTO customer VALUES();
+INSERT INTO services VALUES();
+INSERT INTO brand VALUES();
+INSERT INTO model VALUES();
+INSERT INTO car VALUES();
+INSERT INTO dealer VALUES();
+
+INSERT INTO dealer VALUES('123','John Doe','Address 101',9876543210);
+INSERT INTO dealer VALUES('124','Rahul Kanwal','Forest 123',9876543211);
+INSERT INTO dealer VALUES('125','Mahesh Keswani','Green Land',8796541230);
+INSERT INTO dealer VALUES('126','Aakash Barhate','Dell End',8879543210);
+
+INSERT INTO brand VALUES('TA','Tata');
+INSERT INTO brand VALUES('TOY','Toyota');
+INSERT INTO brand VALUES('AU','Audi');
+INSERT INTO brand VALUES('MAh','Mahindra');
+
+INSERT INTO model VALUES('TA_AR','Aria','TA');
+
+INSERT INTO car VALUES('CAR001',500000,'SUV','Blue','123','TA','TA_AR');
+
+INSERT INTO customer VALUES('1','Butters Stotch','Adderss 51',1234567890,'CAR001');
+
+INSERT INTO services VALUES('S001','CAR001','1','10-10-2018');
