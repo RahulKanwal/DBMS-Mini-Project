@@ -1,31 +1,54 @@
-SELECT * FROM customer;
-SELECT * FROM services;
-SELECT * FROM brand;
-SELECT * FROM model;
-SELECT * FROM car;
-SELECT * FROM dealer;
+Insert Table Commands
 
-INSERT INTO customer VALUES();
-INSERT INTO services VALUES();
-INSERT INTO brand VALUES();
-INSERT INTO model VALUES();
-INSERT INTO car VALUES();
-INSERT INTO dealer VALUES();
 
 INSERT INTO dealer VALUES('123','John Doe','Address 101',9876543210);
 INSERT INTO dealer VALUES('124','Rahul Kanwal','Forest 123',9876543211);
 INSERT INTO dealer VALUES('125','Mahesh Keswani','Green Land',8796541230);
 INSERT INTO dealer VALUES('126','Aakash Barhate','Dell End',8879543210);
+INSERT INTO dealer VALUES('216','Jon Snow','Dell End',8879543210);
 
 INSERT INTO brand VALUES('TA','Tata');
 INSERT INTO brand VALUES('TOY','Toyota');
 INSERT INTO brand VALUES('AU','Audi');
 INSERT INTO brand VALUES('MAh','Mahindra');
+INSERT INTO brand VALUES('MER','Mercedes');
 
 INSERT INTO model VALUES('TA_AR','Aria','TA');
+INSERT INTO model VALUES('TA_NA','Nano','TA');
+INSERT INTO model VALUES('MEC','C300','MER');
+INSERT INTO model VALUES('MEE','E350','MER');
+INSERT INTO model VALUES('AUQ','Q10','AU');
+INSERT INTO model VALUES('AUR','R8','AU');
+INSERT INTO model VALUES('MAS','Scorpio','MAh');
+INSERT INTO model VALUES('MAX','XUV 500','MAh');
+INSERT INTO model VALUES('TI','Innova','TOY');
+INSERT INTO model VALUES('TC','Corolla','TOY');
 
 INSERT INTO car VALUES('CAR001',500000,'SUV','Blue','123','TA','TA_AR');
+INSERT INTO car VALUES('CAR002',1000,'Sedan','Red','123','TA','TA_NA');
+INSERT INTO car VALUES('CAR003',100000,'SUV','Pink','124','MAh','MAS');
+INSERT INTO car VALUES('CAR004',200000,'SUV','Green','124','MAh','MAX');
+INSERT INTO car VALUES('CAR005',350000,'SUV','Black','125','TOY','TI');
+INSERT INTO car VALUES('CAR006',400000,'Sedan','White','125','TOY','TC');
+INSERT INTO car VALUES('CAR007',250000,'Sedan','Red','126','AU','AUQ');
+INSERT INTO car VALUES('CAR008',550000,'Sedan','Yellow','126','AU','AUR');
+INSERT INTO car VALUES('CAR009',600000,'Sedan','Blue','213','MER','MEC');
+INSERT INTO car VALUES('CAR010',250000,'Sedan','Green','213','MER','MEE');
+
 
 INSERT INTO customer VALUES('1','Butters Stotch','Adderss 51',1234567890,'CAR001');
+INSERT INTO customer VALUES('2','Homer Simpson','42,Evergreen Terrace,Springfield',4545454565,'CAR002');
+INSERT INTO customer VALUES('3','Peter Griffin','1,Home,Quahog',4561237890,'CAR003');
+INSERT INTO customer VALUES('4','June Osborn','America',4561237891,'CAR004');
+INSERT INTO customer VALUES('5','Sachin Shetty','India',4561237892,'CAR005');
+INSERT INTO customer VALUES('6','Apu Nahasapeemapetillon','India America',4561237893,'CAR006');
+INSERT INTO customer VALUES('7','Raj Koothrapalli','America India',4561237894,'CAR007');
+INSERT INTO customer VALUES('8','Dhruv Patil','Mumbai',4561237895,'CAR008');
+INSERT INTO customer VALUES('9','Rahul Singh','Navi Mumbai',4561237896,'CAR009');
+INSERT INTO customer VALUES('10','Tony Soprano','Italy America',4561237897,'CAR010');
 
 INSERT INTO services VALUES('S001','CAR001','1','10-10-2018');
+INSERT INTO services VALUES('S002','CAR003','3','10-16-2018');
+INSERT INTO services VALUES('S003','CAR005','5','1-25-2018');
+INSERT INTO services VALUES('S004','CAR007','7','8-15-2018');
+INSERT INTO services VALUES('S005','CAR009','9','3-6-2018');

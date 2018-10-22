@@ -1,3 +1,6 @@
+Create Table Commands
+
+
 CREATE TABLE dealer
 (
 	dealer_id VARCHAR(10) primary key,
@@ -47,9 +50,5 @@ CREATE TABLE services
 	date_recieved date not null
 );
 
-SELECT * FROM customer;
-SELECT * FROM services;
-SELECT * FROM brand;
-SELECT * FROM model;
-SELECT * FROM car;
-SELECT * FROM dealer;
+
+
